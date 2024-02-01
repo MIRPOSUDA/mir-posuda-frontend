@@ -1,18 +1,18 @@
-import React from "react"
-import {Outlet} from "react-router-dom"
-import NavbarSimple from "../components/NavbarSimple"
-import SimpleFooter from "../components/SimpleFooter"
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+import NavbarSimple from "../components/NavbarSimple";
 
 function RootLayout() {
   return (
-    <div className="base-container">
+    <div className="base-container h-full flex flex-col">
       <NavbarSimple />
-      <main>
+      <main className="grow">
         <Outlet />
       </main>
       <SimpleFooter />
     </div>
-  )
+  );
 }
 
-export default RootLayout
+export default RootLayout;
