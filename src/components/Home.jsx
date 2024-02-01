@@ -1,7 +1,8 @@
-import React from "react"
+import React from "react";
+import ProductCards from "./ProductCards";
 
 function Home() {
-  return <div>Home</div>
+  return <ProductCards />;
 }
 
-export default Home
+export default Home;
