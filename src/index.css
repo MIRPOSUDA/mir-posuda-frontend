@@ -5,7 +5,7 @@
 
 @layer components {
   .base-container {
-    @apply w-full mx-auto px-5 max-w-[1240px];
+    @apply mx-auto w-full max-w-[1240px] px-5;
   }
 
   body {
@@ -22,7 +22,8 @@
   footer {
     flex-shrink: 0;
   }
+
   #root {
-    @apply flex flex-col h-full;
+    @apply flex h-full flex-col;
   }
 }

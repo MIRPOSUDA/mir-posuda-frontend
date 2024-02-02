@@ -4,7 +4,6 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Button,
   IconButton,
   Tooltip,
 } from "@material-tailwind/react";
@@ -13,10 +12,10 @@ import Yon from "../public/yon.jpg";
 
 function ProductCard() {
   return (
-    <Card className="w-full max-w-[26rem] shadow-lg group">
+    <Card className="group w-full max-w-[26rem] shadow-lg">
       <CardHeader floated={false} color="blue-gray">
         <img
-          className="group-hover:scale-105 transition-transform duration-500"
+          className="transition-transform duration-500 group-hover:scale-105"
           src={Yon}
           alt="ui/ux review check"
         />
@@ -25,7 +24,7 @@ function ProductCard() {
           size="sm"
           color="red"
           variant="text"
-          className="!absolute top-4 right-4 rounded-full"
+          className="!absolute right-4 top-4 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +41,7 @@ function ProductCard() {
           <Typography
             variant="h5"
             color="blue-gray"
-            className="font-medium !line-clamp-2"
+            className="!line-clamp-2 font-medium"
           >
             Ёнгок чакиш мосламаси.
           </Typography>
@@ -58,9 +57,9 @@ function ProductCard() {
           Ёнгокни магзини бутун, юмалоглигича чакади. Дастаси силикон подушкали
         </Typography>
       </CardBody>
-      <CardFooter className="pt-3 flex">
+      <CardFooter className="flex pt-3">
         <Tooltip content="Savatga qo'shish uchun bosing">
-          <span className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 active:opacity-80 ml-auto">
+          <span className="ml-auto cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 active:opacity-80">
             <CartPlus className="text-inherit" />
           </span>
         </Tooltip>

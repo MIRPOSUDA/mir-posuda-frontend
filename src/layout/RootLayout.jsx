@@ -5,7 +5,7 @@ import SimpleFooter from "../components/SimpleFooter";
 
 function RootLayout() {
   return (
-    <div className="base-container h-full flex flex-col">
+    <div className="base-container flex h-full flex-col">
       <NavbarSimple />
       <main className="grow">
         <Outlet />

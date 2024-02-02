@@ -1,6 +1,6 @@
-import React from "react"
-import ProductCards from "./ProductCards"
-import CarouselDefault from "./CarouselDefault"
+import React from "react";
+import ProductCards from "./ProductCards";
+import CarouselDefault from "./CarouselDefault";
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
       <CarouselDefault />
       <ProductCards />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

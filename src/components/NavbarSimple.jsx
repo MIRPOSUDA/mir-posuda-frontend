@@ -1,5 +1,5 @@
-import React from "react"
-import {NavLink} from "react-router-dom"
+import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   Select,
   Option,
@@ -8,16 +8,16 @@ import {
   Input,
   Button,
   Card,
-} from "@material-tailwind/react"
-import {Heart, MapPin, Search, Suitcase, User, Xmark} from "iconoir-react"
-import Logo from "../public/logo.jpg"
+} from "@material-tailwind/react";
+import { Heart, MapPin, Search, Suitcase, User, Xmark } from "iconoir-react";
+import Logo from "../public/logo.jpg";
 function NavbarSimple() {
-  const [open, setOpen] = React.useState(false)
-  const handleOpen = () => setOpen((cur) => !cur)
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen((cur) => !cur);
 
   return (
     <header className="">
-      <div className="flex justify-between items-center py-2">
+      <div className="flex items-center justify-between py-2">
         <p className="flex gap-1">
           <MapPin /> Filiallarimiz: Kokand
         </p>
@@ -39,8 +39,8 @@ function NavbarSimple() {
           </div>
         </div>
       </div>
-      <div className="flex gap-x-6 mt-6 items-center">
-        <NavLink className="font-bold text-[25px]" to="/">
+      <div className="mt-6 flex items-center gap-x-6">
+        <NavLink className="text-[25px] font-bold" to="/">
           <img width="60" height="60" src={Logo} alt="Mirposuda logo" />
         </NavLink>
         <div className="w-[200px]">
@@ -53,15 +53,15 @@ function NavbarSimple() {
         </div>
         <div className="flex items-center">
           <input
-            className="border h-[40px] px-2 border-brown-100 rounded-[6px] border-solid w-[410px] outline-none"
+            className="h-[40px] w-[410px] rounded-[6px] border border-solid border-brown-100 px-2 outline-none"
             type="text"
             placeholder="Mahsulot va turkumlarni izlash"
           />
-          <div className="absolute ml-[405px] rounded-r-[6px] bg-blue-gray-50 w-16 h-[40px] border border-t-[#808080] border-r-[#808080] border-b-[#808080] border-opacity-35">
+          <div className="absolute ml-[405px] h-[40px] w-16 rounded-r-[6px] border border-b-[#808080] border-r-[#808080] border-t-[#808080] border-opacity-35 bg-blue-gray-50">
             <Search width="20" height="20" className="m-auto h-full " />
           </div>
         </div>
-        <div className="flex ml-auto gap-x-2">
+        <div className="ml-auto flex gap-x-2">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
             <User className="mx-1" />
             <p onClick={handleOpen} className="flex">
@@ -74,28 +74,28 @@ function NavbarSimple() {
               className="bg-transparent shadow-none"
             >
               <Card className="mx-auto w-full max-w-[420px] rounded-md">
-                <div className="grid justify-center mt-8">
+                <div className="mt-8 grid justify-center">
                   <button
                     onClick={handleOpen}
-                    className="w-min max-w-full ml-auto border bg-blue-gray-50 rounded-full p-1 hover:bg-blue-gray-100 mb-4"
+                    className="mb-4 ml-auto w-min max-w-full rounded-full border bg-blue-gray-50 p-1 hover:bg-blue-gray-100"
                   >
                     <Xmark />
                   </button>
-                  <h1 className="font-bold text-[22px] text-black ">
+                  <h1 className="text-[22px] font-bold text-black ">
                     Telefon raqamingizni kiriting
                   </h1>
-                  <p className="text-[16px] mt-2">
+                  <p className="mt-2 text-[16px]">
                     Tasdiqlash kodi bilan SMS yuboramiz
                   </p>
-                  <div className="max-w-[340px] mt-8">
+                  <div className="mt-8 max-w-[340px]">
                     <Input
                       size="lg"
                       type="tel"
                       label="+998 00 000 00"
                       variant="outlined"
                     />
-                    <Button className="w-full mt-6">Kodni olish</Button>
-                    <p className="text-center text-[13px] mt-28 mb-5">
+                    <Button className="mt-6 w-full">Kodni olish</Button>
+                    <p className="mb-5 mt-28 text-center text-[13px]">
                       Tizimga kirish orqali siz shaxsiy ma'lumotlarni qayta
                       ishlash siyosatiga rozilik bildirasiz
                     </p>
@@ -121,7 +121,7 @@ function NavbarSimple() {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
-export default NavbarSimple
+export default NavbarSimple;

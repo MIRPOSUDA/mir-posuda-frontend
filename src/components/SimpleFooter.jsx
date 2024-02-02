@@ -1,12 +1,12 @@
-import {Typography} from "@material-tailwind/react"
+import { Typography } from "@material-tailwind/react";
 
 function SimpleFooter() {
   return (
-    <footer className="flex bottom-0 flex-row flex-wrap items-center gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between max-w-[1230px] w-full mt-5">
+    <footer className="bottom-0 mt-5 flex w-full max-w-[1230px] flex-row flex-wrap items-center gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
       <Typography color="blue-gray" className="font-normal">
         &copy; 2023 Material Tailwind
       </Typography>
-      <ul className="flex flex-wrap items-center gap-y-2 gap-x-8 mr-[40px]">
+      <ul className="mr-[40px] flex flex-wrap items-center gap-x-8 gap-y-2">
         <li>
           <Typography
             as="a"
@@ -49,7 +49,7 @@ function SimpleFooter() {
         </li>
       </ul>
     </footer>
-  )
+  );
 }
 
-export default SimpleFooter
+export default SimpleFooter;
