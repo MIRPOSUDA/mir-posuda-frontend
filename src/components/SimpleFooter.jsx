@@ -2,7 +2,7 @@ import {Typography} from "@material-tailwind/react"
 
 function SimpleFooter() {
   return (
-    <footer className="fixed flex bottom-0 flex-row flex-wrap items-center gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between max-w-[1230px] w-full">
+    <footer className="flex bottom-0 flex-row flex-wrap items-center gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between max-w-[1230px] w-full mt-5">
       <Typography color="blue-gray" className="font-normal">
         &copy; 2023 Material Tailwind
       </Typography>

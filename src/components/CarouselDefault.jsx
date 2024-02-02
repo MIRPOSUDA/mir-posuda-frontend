@@ -2,7 +2,12 @@ import {Carousel} from "@material-tailwind/react"
 
 function CarouselDefault() {
   return (
-    <Carousel autoplay className="rounded-xl h-[400px] mt-3">
+    <Carousel
+      loop
+      autoplayDelay={4000}
+      autoplay
+      className="rounded-xl h-[400px] mt-3 mb-4 shadow-2xl"
+    >
       <img
         src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
         alt="image 1"
