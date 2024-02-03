@@ -1,9 +1,10 @@
-import {RouterProvider, createBrowserRouter} from "react-router-dom"
-import RootLayout from "./layout/RootLayout"
-import Home from "./components/Home"
-import Likes from "./pages/Likes"
-import Cart from "./pages/Cart"
-import Order from "./pages/Order"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import RootLayout from "./layout/RootLayout";
+import Home from "./components/Home";
+import Likes from "./pages/Likes";
+import Cart from "./pages/Cart";
+import Order from "./pages/Order";
+import Branches from "./pages/Branches";
 
 function App() {
   const routest = createBrowserRouter([
@@ -29,9 +30,13 @@ function App() {
       path: "/order",
       element: <Order />,
     },
-  ])
+    {
+      path: "/branches",
+      element: <Branches />,
+    },
+  ]);
 
-  return <RouterProvider router={routest} />
+  return <RouterProvider router={routest} />;
 }
 
-export default App
+export default App;
