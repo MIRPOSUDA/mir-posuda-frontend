@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT")
+const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: [
     "./index.html",
@@ -8,7 +8,10 @@ module.exports = withMT({
     "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      roboto: ["Roboto", "Arial", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
-})
+});
