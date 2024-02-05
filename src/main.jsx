@@ -4,6 +4,8 @@ import "./custom-toast.css";
 import "./index.css";
 import { ToastContainer } from "react-toastify";
 
+// Comment
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <App />
