@@ -5,6 +5,7 @@ import Likes from "./pages/Likes";
 import Cart from "./pages/Cart";
 import Order from "./pages/Order";
 import Branches from "./pages/Branches";
+import Product from "./pages/Product";
 
 function App() {
   const routest = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/branches",
       element: <Branches />,
+    },
+    {
+      path: "/product",
+      element: <Product />,
     },
   ]);
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import NavbarSimple from "../components/NavbarSimple";
 import SimpleFooter from "../components/SimpleFooter";
-
+import BreadCrumbs from "../components/BreadCrumbs";
 function RootLayout() {
   return (
     <div className="base-container flex h-full flex-col">

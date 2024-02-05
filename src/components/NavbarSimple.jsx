@@ -25,6 +25,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import BreadCrumbs from "./BreadCrumbs";
 const navListMenuItems = [
   {
     title: "Products",
@@ -414,12 +415,12 @@ function NavbarSimple() {
             {searchText.length > 0 && (
               <button
                 onClick={handleInputClear}
-                className="flex h-full w-full items-center justify-center"
+                className="flex h-full w-full items-center justify-center transition hover:bg-blue-gray-100 active:bg-blue-gray-200"
               >
                 <Xmark
                   width="22"
                   height="22"
-                  className="rounded-full border border-solid transition hover:bg-blue-gray-100 active:bg-blue-gray-200"
+                  className="rounded-full transition "
                 />
               </button>
             )}
@@ -486,6 +487,7 @@ function NavbarSimple() {
           </NavLink>
         </div>
       </div>
+      <BreadCrumbs />
     </header>
   );
 }
