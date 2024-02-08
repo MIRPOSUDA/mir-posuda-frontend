@@ -1,6 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
 
-function CarouselDefault() {
+function MPCarousel() {
   return (
     <Carousel
       loop
@@ -26,4 +26,4 @@ function CarouselDefault() {
     </Carousel>
   );
 }
-export default CarouselDefault;
+export default MPCarousel;

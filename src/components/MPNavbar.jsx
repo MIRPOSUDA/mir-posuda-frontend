@@ -1,8 +1,8 @@
-import React, { Children, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Dialog, Input, Button, Card, Badge } from "@material-tailwind/react";
 import { Heart, MapPin, Search, Suitcase, User, Xmark } from "iconoir-react";
-import Logo from "../public/logo.jpg";
+import Logo from "../../public/logo.jpg";
 import {
   Collapse,
   Typography,
@@ -152,7 +152,7 @@ function NavListMenu() {
   );
 }
 
-function NavbarSimple() {
+function MPNavbar() {
   const [searchText, setSearchText] = useState("");
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen((cur) => !cur);
@@ -473,16 +473,16 @@ function NavbarSimple() {
             <Badge content={"0"}>
               <ListItem className="flex items-center  py-2 pr-4">
                 <Heart className="mx-1" />
-                <h1>Sevimlilar</h1>
+                Sevimlilar
               </ListItem>
             </Badge>
           </NavLink>
 
-          <NavLink to="/cart">
+          <NavLink to="/shopping-cart">
             <Badge content={"0"}>
               <ListItem className="flex items-center py-2 pr-4">
                 <Suitcase className="mx-1" />
-                <h1>Korzinka</h1>
+                Korzinka
               </ListItem>
             </Badge>
           </NavLink>
@@ -494,5 +494,4 @@ function NavbarSimple() {
   );
 }
 
-export default NavbarSimple;
-  
+export default MPNavbar;

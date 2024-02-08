@@ -1,16 +1,14 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-import NavbarSimple from "../components/NavbarSimple";
-import SimpleFooter from "../components/SimpleFooter";
-import BreadCrumbs from "../components/BreadCrumbs";
+import MPNavbar from "../components/MPNavbar";
+import MPFooter from "../components/MPFooter";
 function RootLayout() {
   return (
     <div className="base-container flex h-full flex-col">
-      <NavbarSimple />
+      <MPNavbar />
       <main className="grow">
         <Outlet />
       </main>
-      <SimpleFooter />
+      <MPFooter />
     </div>
   );
 }

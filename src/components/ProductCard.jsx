@@ -8,7 +8,7 @@ import {
   Tooltip,
 } from "@material-tailwind/react";
 import { CartPlus, StarSolid } from "iconoir-react";
-import Yon from "../public/yon.jpg";
+import Yon from "../../public/yon.jpg";
 import { NavLink } from "react-router-dom";
 
 function ProductCard() {

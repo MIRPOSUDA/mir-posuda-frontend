@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
 
 function Chat() {
   useEffect(() => {
@@ -7,14 +7,11 @@ function Chat() {
     script.async = true;
     script.src = "https://widget.replain.cc/dist/client.js";
     document.body.appendChild(script);
-
     return () => {
-      // Clean up the script when the component unmounts
       document.body.removeChild(script);
     };
-  }, []); // Empty dependency array means this effect runs only once after mounting
-
-  return null; // You can return null because this component doesn't render anything visible
+  }, []);
+  return null;
 }
 
 export default Chat;

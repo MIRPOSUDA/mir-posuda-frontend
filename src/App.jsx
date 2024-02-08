@@ -2,13 +2,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import Likes from "./pages/Likes";
-import Cart from "./pages/Cart";
 import Order from "./pages/Order";
 import Branches from "./pages/Branches";
-import Product from "./pages/Product";
+import ShoppingCart from "./pages/ShoppingCart";
 
 function App() {
-  const routest = createBrowserRouter([
+  const routes = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
@@ -17,31 +16,27 @@ function App() {
           index: true,
           element: <Home />,
         },
+        {
+          path: "/likes",
+          element: <Likes />,
+        },
+        {
+          path: "/order",
+          element: <Order />,
+        },
+        {
+          path: "/branches",
+          element: <Branches />,
+        },
+        {
+          path: "/shopping-cart",
+          element: <ShoppingCart />,
+        },
       ],
-    },
-    {
-      path: "/likes",
-      element: <Likes />,
-    },
-    {
-      path: "/cart",
-      element: <Cart />,
-    },
-    {
-      path: "/order",
-      element: <Order />,
-    },
-    {
-      path: "/branches",
-      element: <Branches />,
-    },
-    {
-      path: "/product",
-      element: <Product />,
     },
   ]);
 
-  return <RouterProvider router={routest} />;
+  return <RouterProvider router={routes} />;
 }
 
 export default App;

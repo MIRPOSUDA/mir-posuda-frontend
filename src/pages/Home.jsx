@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCards from "../components/ProductCards";
-import CarouselDefault from "../components/CarouselDefault";
+import MPCarousel from "../components/MPCarousel";
 import { NavArrowRight } from "iconoir-react";
 import { NavLink } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
@@ -8,7 +8,7 @@ import { Button } from "@material-tailwind/react";
 function Home() {
   return (
     <>
-      <CarouselDefault />
+      <MPCarousel />
       <NavLink
         to="/"
         className="mx-2 my-5 flex items-center text-3xl font-bold"
