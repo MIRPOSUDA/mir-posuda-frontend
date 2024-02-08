@@ -1,6 +1,6 @@
 import React from "react";
-import ProductCards from "./ProductCards";
-import CarouselDefault from "./CarouselDefault";
+import ProductCards from "../components/ProductCards";
+import CarouselDefault from "../components/CarouselDefault";
 import { NavArrowRight } from "iconoir-react";
 import { NavLink } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
@@ -26,7 +26,7 @@ function Home() {
       </div>
       <div className="mt-5 flex items-center justify-center">
         <NavLink to="/" className="items-center">
-          <Button className="h-14 w-[700px] my-5 bg-blue-gray-100 text-[15px] text-black">
+          <Button className="my-5 h-14 w-[700px] bg-blue-gray-100 text-[15px] text-black">
             Yana ko'rsatish
           </Button>
         </NavLink>
