@@ -26,6 +26,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import BreadCrumbs from "./BreadCrumbs";
+import Chat from "./Chat";
 const navListMenuItems = [
   {
     title: "Products",
@@ -488,8 +489,10 @@ function NavbarSimple() {
         </div>
       </div>
       <BreadCrumbs />
+      <Chat />
     </header>
   );
 }
 
 export default NavbarSimple;
+  
